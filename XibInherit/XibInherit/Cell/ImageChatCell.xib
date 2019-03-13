@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ImageChatCell">
+            <connections>
+                <outlet property="viewImage" destination="u4x-3V-yVs" id="dPB-qg-sjF"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="232" height="122"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chat_img_default" translatesAutoresizingMaskIntoConstraints="NO" id="u4x-3V-yVs">
+                    <rect key="frame" x="0.0" y="0.0" width="232" height="122"/>
+                    <constraints>
+                        <constraint firstAttribute="height" relation="lessThanOrEqual" constant="140" id="m9k-Mm-82w"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="u4x-3V-yVs" secondAttribute="bottom" id="P3H-Fu-lqg"/>
+                <constraint firstAttribute="trailing" secondItem="u4x-3V-yVs" secondAttribute="trailing" id="a7s-3I-AMe"/>
+                <constraint firstItem="u4x-3V-yVs" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="qPu-bM-RO7"/>
+                <constraint firstItem="u4x-3V-yVs" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="xxD-Nt-zjf"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-60.799999999999997" y="-197.00149925037482"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="chat_img_default" width="190" height="137"/>
+    </resources>
+</document>
